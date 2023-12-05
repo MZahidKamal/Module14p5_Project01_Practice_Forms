@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls, name='admin'),
     path('base/', base, name='base'),
     path('', include('first_app_formAPI.urls')),
+    path('', include('second_app_ModelForm.urls')),
 ]
