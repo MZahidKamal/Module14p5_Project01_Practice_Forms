@@ -10,17 +10,30 @@
 	<br>
 
 	<form method="post" action="" enctype="multipart/form-data" style="width: 50%; height: 500px; margin: auto" class="pt-2">
-
 		{#CSRF Token Added here.#}
 		{% csrf_token %}
-
-		<h3>Sample Form 01</h3>
+		<h3>Sample Model Form 01</h3>
 		<h4>()</h4>
-
 		{{ form01 | crispy }}
-
 		<button type="submit" class="btn btn-primary mt-2">Submit</button>
+	</form>
 
+	<form method="post" action="" enctype="multipart/form-data" style="width: 50%; height: 500px; margin: auto" class="pt-2">
+		{#CSRF Token Added here.#}
+		{% csrf_token %}
+		<h3>Sample Model Form 02</h3>
+		<h4>()</h4>
+		{{ form02 | crispy }}
+		<button type="submit" class="btn btn-primary mt-2">Submit</button>
+	</form>
+
+	<form method="post" action="" enctype="multipart/form-data" style="width: 50%; height: 500px; margin: auto" class="pt-2">
+		{#CSRF Token Added here.#}
+		{% csrf_token %}
+		<h3>Sample Model Form 03</h3>
+		<h4>()</h4>
+		{{ form03 | crispy }}
+		<button type="submit" class="btn btn-primary mt-2">Submit</button>
 	</form>
 
 
