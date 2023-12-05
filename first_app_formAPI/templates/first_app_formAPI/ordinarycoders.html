@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+{% load crispy_forms_filters %}
+{% load crispy_forms_tags %}
+
+{% block page_independent_content %}
+	<h1>This is ordinarycoders page.</h1>
+	<br>
+
+	<p style='margin: 0cm;font-size:11.0pt;font-family:"Calibri",sans-serif;line-height:normal;'><strong><span style='font-size:27px;font-family:"Times New Roman",serif;'>All the forms from the page </span></strong><a href="https://ordinarycoders.com/blog/article/using-django-form-fields-and-widgets"><strong><span style='font-size:27px;font-family:"Times New Roman",serif;'>ordinarycoders.com</span></strong></a><strong><span style='font-size:27px;font-family:"Times New Roman",serif;'> are practiced using FormsAPI:&nbsp;</span></strong></p>
+	<br>
+
+{#	<form method="post" action="" enctype="multipart/form-data" style="width: 50%; height: 500px; margin: auto" class="pt-5">#}
+		{#CSRF Token Added here.#}
+{#		{% csrf_token %}#}
+{#		<h3>Sample Form 01</h3>#}
+{#		<h4>(CharField)</h4>#}
+{#		{{ form01 | crispy }}#}
+{#		<button type="submit" class="btn btn-primary mt-2">Submit</button>#}
+{#	</form>#}
+
+{#	<form method="post" action="" enctype="multipart/form-data" style="width: 50%; height: 500px; margin: auto" class="pt-5">#}
+		{#CSRF Token Added here.#}
+{#		{% csrf_token %}#}
+{#		<h3>Sample Form 02</h3>#}
+{#		<h4>(CharField() with Textarea widget)</h4>#}
+{#		{{ form02 | crispy }}#}
+{#		<button type="submit" class="btn btn-primary mt-2">Submit</button>#}
+{#	</form>#}
+
+{#	<form method="post" action="" enctype="multipart/form-data" style="width: 50%; height: 500px; margin: auto" class="pt-5">#}
+		{#CSRF Token Added here.#}
+{#		{% csrf_token %}#}
+{#		<h3>Sample Form 03</h3>#}
+{#		<h4>(CharField() with Textarea widget attribute)</h4>#}
+{#		{{ form03 | crispy }}#}
+{#		<button type="submit" class="btn btn-primary mt-2">Submit</button>#}
+{#	</form>#}
+
+{#	<form method="post" action="" enctype="multipart/form-data" style="width: 50%; height: 500px; margin: auto" class="pt-5">#}
+		{#CSRF Token Added here.#}
+{#		{% csrf_token %}#}
+{#		<h3>Sample Form 04</h3>#}
+{#		<h4>(EmailField())</h4>#}
+{#		{{ form04 | crispy }}#}
+{#		<button type="submit" class="btn btn-primary mt-2">Submit</button>#}
+{#	</form>#}
+
+{#	<form method="post" action="" enctype="multipart/form-data" style="width: 50%; height: 500px; margin: auto" class="pt-5">#}
+		{#CSRF Token Added here.#}
+{#		{% csrf_token %}#}
+{#		<h3>Sample Form 05</h3>#}
+{#		<h4>(BooleanField())</h4>#}
+{#		{{ form05 | crispy }}#}
+{#		<button type="submit" class="btn btn-primary mt-2">Submit</button>#}
+{#	</form>#}
+
+{#	<form method="post" action="" enctype="multipart/form-data" style="width: 50%; height: 500px; margin: auto" class="pt-5">#}
+		{#CSRF Token Added here.#}
+{#		{% csrf_token %}#}
+{#		<h3>Sample Form 06</h3>#}
+{#		<h4>(DateField())</h4>#}
+{#		{{ form06 | crispy }}#}
+{#		<button type="submit" class="btn btn-primary mt-2">Submit</button>#}
+{#	</form>#}
+
+{#	<form method="post" action="" enctype="multipart/form-data" style="width: 50%; height: 500px; margin: auto" class="pt-5">#}
+		{#CSRF Token Added here.#}
+{#		{% csrf_token %}#}
+{#		<h3>Sample Form 07</h3>#}
+{#		<h4>(DateField() with NumberInput widget attribute)</h4>#}
+{#		{{ form07 | crispy }}#}
+{#		<button type="submit" class="btn btn-primary mt-2">Submit</button>#}
+{#	</form>#}
+
+{#	<form method="post" action="" enctype="multipart/form-data" style="width: 50%; height: 500px; margin: auto" class="pt-5">#}
+		{#CSRF Token Added here.#}
+{#		{% csrf_token %}#}
+{#		<h3>Sample Form 08</h3>#}
+{#		<h4>(DateField() with SelectDateWidget widget)</h4>#}
+{#		{{ form08 | crispy }}#}
+{#		<button type="submit" class="btn btn-primary mt-2">Submit</button>#}
+{#	</form>#}
+
+{#	<form method="post" action="" enctype="multipart/form-data" style="width: 50%; height: 500px; margin: auto" class="pt-5">#}
+		{#CSRF Token Added here.#}
+{#		{% csrf_token %}#}
+{#		<h3>Sample Form 09</h3>#}
+{#		<h4>(DecimalField())</h4>#}
+{#		{{ form09 | crispy }}#}
+{#		<button type="submit" class="btn btn-primary mt-2">Submit</button>#}
+{#	</form>#}
+
+{#	<form method="post" action="" enctype="multipart/form-data" style="width: 50%; height: 500px; margin: auto" class="pt-5">#}
+		{#CSRF Token Added here.#}
+{#		{% csrf_token %}#}
+{#		<h3>Sample Form 10</h3>#}
+{#		<h4>(required (Boolean))</h4>#}
+{#		{{ form10 | crispy }}#}
+{#		<button type="submit" class="btn btn-primary mt-2">Submit</button>#}
+{#	</form>#}
+
+{#	<form method="post" action="" enctype="multipart/form-data" style="width: 50%; height: 500px; margin: auto" class="pt-5">#}
+		{#CSRF Token Added here.#}
+{#		{% csrf_token %}#}
+{#		<h3>Sample Form 11</h3>#}
+{#		<h4>(max_length and min_length)</h4>#}
+{#		{{ form11 | crispy }}#}
+{#		<button type="submit" class="btn btn-primary mt-2">Submit</button>#}
+{#	</form>#}
+
+	<form method="post" action="" enctype="multipart/form-data" style="width: 50%; height: 500px; margin: auto" class="pt-5">
+		{#CSRF Token Added here.#}
+		{% csrf_token %}
+		<h3>Sample Form 12</h3>
+		<h4>(label (String))</h4>
+		{{ form12 | crispy }}
+		<button type="submit" class="btn btn-primary mt-2">Submit</button>
+	</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
